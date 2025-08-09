@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import "./App.css";
+import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
+import Sale from "./components/Sale";
+import Banner from "./components/Banner";
+import CardPic from "./components/CardPic";
+import AthleteCard from "./components/athletecard";
+import MenuCarousel from "./components/MenuCarousel";
+import Feature from "./components/Feature";
+import FooterMenu from "./components/FooterMenu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+        <Banner />
+        {/* <Sale /> */}
+        <CardPic />
+        <AppRoutes />
+        <AthleteCard />
+        <MenuCarousel />
+        <Feature />
+        <FooterMenu />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
