@@ -18,6 +18,7 @@ import LoginBar from "../components/Pages/dashboard/LoginBar";
 import FindStore from "../components/Pages/Find Store/FindStore";
 import SignUp from "../components/Pages/Auth/SignUp";
 import Login from "../components/Pages/Auth/Login";
+import MensClothing from "../components/Pages/Mens/MensClothing";
 
 // Dashboard component that combines all dashboard components with loading state
 function Dashboard() {
@@ -208,15 +209,11 @@ export default function AppRoutes() {
         element={<Dashboard />}
       />
       <Route
-        path="/men"
-        element={
-          <PageWithNavbar>
-            <Banner />
-          </PageWithNavbar>
-        }
+        path="/mens"
+        element={<MensClothing />}
       />
       <Route
-        path="/women"
+        path="/womens"
         element={
           <PageWithNavbar>
             <Banner />

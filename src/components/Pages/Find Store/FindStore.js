@@ -531,7 +531,7 @@ export default function FindStore() {
       } else {
         const script =
           document.createElement("script");
-        script.src = `Enter Your API Key`;
+        script.src = `Enter your API key here`;
         script.async = true;
         script.defer = true;
         script.onload = () => {

@@ -122,9 +122,9 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="nav-item mx-3">
-                <a
+                <Link
                   className="nav-link text-white"
-                  href="#"
+                  to="/mens"
                   style={{
                     fontSize: "24px",
                     fontFamily: "Nike Futura ND",
@@ -139,7 +139,7 @@ export default function Navbar() {
                   }}
                 >
                   Men
-                </a>
+                </Link>
               </li>
               <li className="nav-item mx-3">
                 <a
