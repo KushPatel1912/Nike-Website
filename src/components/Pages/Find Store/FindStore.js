@@ -531,7 +531,7 @@ export default function FindStore() {
       } else {
         const script =
           document.createElement("script");
-        script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyC1BGwqo64oo0G7FUIuh-xLPvoN3886Wfw&libraries=places`;
+        script.src = `Enter Your API Key`;
         script.async = true;
         script.defer = true;
         script.onload = () => {
