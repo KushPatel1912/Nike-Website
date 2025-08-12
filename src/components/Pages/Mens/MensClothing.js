@@ -11,6 +11,10 @@ import MansClothingVideo from "./MansClothingVideo";
 import MansClothingRunning from "./MansClothingRunning";
 import MenShopBy from "./MenShopBy";
 import MansTrendingNow from "./MansTrendingNow";
+import MansShopCategory from "./MansShopCategory";
+import FooterMenu from "../dashboard/FooterMenu";
+import Menucarousel from "../dashboard/MenuCarousel";
+import Footer from "../dashboard/Footer";
 
 export default function MensClothing() {
   return (
@@ -18,13 +22,23 @@ export default function MensClothing() {
       <Navbar />
       <MansClothingNav />
       {/* Hero Video Section */}
-      <MansClothingVideo />
+      <div className="hero-video">
+        <MansClothingVideo />
+      </div>
       {/* Nike Running Section */}
-      <MansClothingRunning />
+      <div className="nike-running">
+        <MansClothingRunning />
+      </div>
       {/* Men Shop By Section */}
       <MenShopBy />
       {/* Mans Trending Now Section */}
       <MansTrendingNow />
+      {/* Mans Shop Category Section */}
+      <MansShopCategory />
+      {/* Mans Clothing Section */}
+      <Menucarousel />
+      <FooterMenu />
+      <Footer />
     </div>
   );
 }

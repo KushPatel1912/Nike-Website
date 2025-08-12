@@ -6,11 +6,14 @@ import { Link } from "react-router-dom";
 export default function MansClothingNav() {
   return (
     <nav
-      className="navbar navbar-expand-lg"
+      className="navbar navbar-expand-lg responsive-mens-nav sticky-top"
       style={{
         backgroundColor: "#ffffff",
         height: "100px",
         padding: "0 50px",
+        top: "64px", // Position below the main navbar
+        zIndex: 999,
+        borderBottom: "1px solid #e0e0e0",
       }}
     >
       <div
@@ -40,6 +43,7 @@ export default function MansClothingNav() {
 
         {/* Navigation Menu - Center */}
         <div
+          className="responsive-mens-nav-menu"
           style={{
             position: "absolute",
             left: "50%",
